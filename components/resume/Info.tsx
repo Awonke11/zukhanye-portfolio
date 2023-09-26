@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { AiOutlineFileText } from "react-icons/ai";
 import {CiCalendarDate} from "react-icons/ci";
-import zuks from "@/images/Zuks.png";
+import zuks from "../../images/zuks.png";
 import styles from "@/styles/components/resume/Info.module.css";
 
 export default function Info() {
