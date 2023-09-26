@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Media Sans";
+  src: url("../public/fonts/mediasanssemicondensed-regular-TRIAL-BF63c75479c7708.otf");
+}
+
+@font-face {
+  font-family: "Media Sans Spread";
+  src: url("../public/fonts/mediasansregular.otf");
+}
+
+@font-face {
+  font-family: "Media Sans Extended";
+  src: url("../public/fonts/mediasansextended-regular-TRIAL-BF63c7546b4aef3.otf");
+}
+
+@font-face {
+  font-family: "Media Sans Bold";
+  src: url("../public/fonts/mediasans-bold-TRIAL-BF63c7546b153ef.otf");
+}
+
+:root {
+  /* Font family */
+  --family: "Media Sans";
+  --wide-family: "Media Sans Spread";
+  --extended-family: "Media Sans Extended";
+  --bold-family: "Media Sans Bold";
+
+  /* Colors */
+  --white: #ffffff;
+  --primary: #EB8E13;
+  --secondary: #D6CD00;
+  --black: #000000;
+  --grey: rgb(139, 139, 139);
+
+  /* Border radius */
+  --sm-radius: 5px;
+  --md-radius: 10px;
+  --lg-radius: 20px;
+
+  /* Font-weight */
+  --regular: 400;
+  --bold: 700;
+  --black-fw: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}

@@ -1,0 +1,60 @@
+.desktopNav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desktopNavLogo {
+    display: flex;
+    align-items: center;
+}
+
+.desktopNavLogoTitle,
+.desktopNavLogoColor {
+    font-size: 2.5rem;
+    font-family: var(--bold-family);
+}
+
+.desktopNavLogoColor {
+    color: var(--primary);
+}
+
+.desktopNavContainer {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.desktopNavContainerLinks {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.desktopNavContainerMail {
+    text-decoration: none;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1rem .8rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border-radius: var(--sm-radius);
+}
+
+.desktopNavContainerMailIcon {
+    font-size: 1rem;
+}
+
+.desktopNavContainerMailText {
+    font-size: .85rem;
+    font-weight: var(--bold);
+}
+
+@media screen and (max-width: 480px) {
+    .desktopNav {
+        display: none;
+    }
+}

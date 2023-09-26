@@ -1,0 +1,46 @@
+.mobileNav {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .mobileNav {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .mobileNavHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .mobileNavHeaderLogo {
+        display: flex;
+        align-items: center;
+    }
+    .mobileNavHeaderLogoTitle,
+    .mobileNavHeaderLogoColor {
+        font-size: 1.8rem;
+        font-family: var(--bold-family);
+    }
+    .mobileNavHeaderLogoColor {
+        color: var(--primary);
+    }
+    .mobileNavHeaderIcon {
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .mobileNavContent {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--white);
+        padding: 1.5rem;
+        z-index: 10;
+    }
+    .mobileNavContentIcon {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}

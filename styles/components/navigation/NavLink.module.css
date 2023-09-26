@@ -1,0 +1,12 @@
+.navLink,
+.navLinkActive {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--grey);
+    font-weight: var(--bold);
+}
+
+.navLinkActive {
+    color: var(--orange); 
+    font-weight: var(--bold);
+}
