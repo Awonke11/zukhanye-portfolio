@@ -50,24 +50,28 @@ export default function MobileNav() {
                         title="Home"
                         text="Learn more about me."
                         url=""
+                        setShowNav={setShowNav}
                     />
                     <MobileNavLink 
-                        link="/"
+                        link="/resume"
                         title="Resume/CV"
                         text="View my experiences"
                         url=""
+                        setShowNav={setShowNav}
                     />
                     <MobileNavLink 
-                        link="/"
+                        link="/skills"
                         title="Skills"
                         text="Skills from this degree."
                         url=""
+                        setShowNav={setShowNav}
                     />
                     <MobileNavLink 
-                        link="/"
+                        link="/gallery"
                         title="Gallery"
                         text="All images of my experiences"
                         url=""
+                        setShowNav={setShowNav}
                     />
                 </section>
                 <a href="mailto:ajmnotoza@gmail.com" className={styles.mobileNavContentLink}>
