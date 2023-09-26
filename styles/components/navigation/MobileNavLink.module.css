@@ -22,6 +22,7 @@
 .mobileNavLinkHeaderTitle {
     font-size: 4rem;
     font-family: var(--family);
+    letter-spacing: .2rem;
 }
 
 .mobileNavLinkHeaderText {
@@ -29,5 +30,5 @@
 }
 
 .mobileNavLinkText {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
