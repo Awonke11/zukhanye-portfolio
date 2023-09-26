@@ -1,0 +1,25 @@
+.roadMap {
+    width: 100%;
+    padding: 0 1rem;
+    height: 105rem;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.roadMapSvg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.roadMapContent {
+    z-index: 2;
+}
+
+@media screen and (max-width: 480px) {
+    .roadMap {
+        height: 33rem;
+    }
+}
