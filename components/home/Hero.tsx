@@ -14,7 +14,16 @@ export default function Hero() {
     const textAnimation = useAnimation();
     const hideTextAnimation = useAnimation();
     const stiff = 20;
-    const damp = 10
+    const damp = 10;
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => {
+        if (window.innerWidth < 480) {
+            setIsMobile(true)
+        } else {
+            setIsMobile(false)
+        }
+    }, [])
 
     const [showDescription, setShowDescription] = useState(false)
     const titlesAnimation = useAnimation();
@@ -148,14 +157,45 @@ export default function Hero() {
                     <BsArrowDown className={styles.heroButtonsRoadIcon} />
                 </a>
             </section>
-            <motion.section 
-                className={styles.heroSVG}
-                initial={{y: 100, opacity: 0}}
-                animate={{y: 0, opacity: 1}}
-                transition={{type: "spring", stiffness: stiff, damping: damp}}
-            >
-                <LogoSvg />
-            </motion.section>
+            {
+                isMobile ?
+                <>
+                    <motion.section 
+                        className={styles.heroSVGMobile}
+                        initial={{y: 100, opacity: 0}}
+                        animate={{y: 0, opacity: 1}}
+                        transition={{type: "spring", stiffness: stiff, damping: damp}}
+                    >
+                        <LogoMobile />
+                    </motion.section>
+                    <motion.section 
+                        className={styles.heroSVG}
+                        initial={{y: 100, opacity: 0}}
+                        animate={{y: 0, opacity: 1}}
+                        transition={{type: "spring", stiffness: stiff, damping: damp}}
+                    >
+                        <LogoSvg />
+                    </motion.section>
+                </> :
+                <>
+                    <motion.section 
+                        className={styles.heroSVG}
+                        initial={{y: 100, opacity: 0}}
+                        animate={{y: 0, opacity: 1}}
+                        transition={{type: "spring", stiffness: stiff, damping: damp}}
+                    >
+                        <LogoSvg />
+                    </motion.section>
+                    <motion.section 
+                        className={styles.heroSVGMobile}
+                        initial={{y: 100, opacity: 0}}
+                        animate={{y: 0, opacity: 1}}
+                        transition={{type: "spring", stiffness: stiff, damping: damp}}
+                    >
+                        <LogoMobile />
+                    </motion.section>
+                </>
+            }
         </section>
     )
 }

@@ -1,0 +1,45 @@
+.pageTitle {
+    width: 100%;
+    padding: 0 1rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.pageTitleContent {
+    padding: .7rem 1rem;
+    border: 1px solid var(--black);
+    width: 100%;
+    border-radius: var(--md-radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pageTitleContentLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageTitleContentLogoIcon {
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.pageTitleContentTitle {
+    font-family: var(--family);
+    font-size: 2rem;
+    letter-spacing: .2rem;
+}
+
+@media screen and (max-width: 480px) {
+    .pageTitle {
+        margin-top: 3rem;
+    }
+    .pageTitleContentTitle {
+        font-size: 1.2rem;
+    }
+    .pageTitleContentLogoIcon {
+        font-size: 1.6rem;
+    }
+}

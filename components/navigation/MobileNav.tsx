@@ -5,6 +5,8 @@ import {GiHamburgerMenu} from "react-icons/gi";
 import {GrClose} from "react-icons/gr";
 import { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+import MobileNavLink from "./MobileNavLink";
+import { AiOutlineMail } from "react-icons/ai";
 
 export default function MobileNav() {
     const [showNav, setShowNav] = useState(false)
@@ -16,14 +18,16 @@ export default function MobileNav() {
                 opacity: 1,
                 height: "auto",
                 y: 0,
-                transition: {type: "spring", stiffness: 20, damping: 10}
+                transition: {type: "spring", stiffness: 20, damping: 10},
+                display: "block"
             })
         } else {
             navAnimate.start({
                 opacity: 0,
                 height: 0,
                 y: 100,
-                transition: {type: "spring", stiffness: 20, damping: 10}
+                transition: {type: "spring", stiffness: 20, damping: 10},
+                display: "none"
             })
         }
     }, [navAnimate, showNav])
@@ -40,6 +44,36 @@ export default function MobileNav() {
             </section>
             <motion.section animate={navAnimate} className={styles.mobileNavContent}>
                 <GrClose className={styles.mobileNavContentIcon} onClick={() => setShowNav(false)} />
+                <section className={styles.mobileNavContentLinks}>
+                    <MobileNavLink 
+                        link="/"
+                        title="Home"
+                        text="Learn more about me."
+                        url=""
+                    />
+                    <MobileNavLink 
+                        link="/"
+                        title="Resume/CV"
+                        text="View my experiences"
+                        url=""
+                    />
+                    <MobileNavLink 
+                        link="/"
+                        title="Skills"
+                        text="Skills from this degree."
+                        url=""
+                    />
+                    <MobileNavLink 
+                        link="/"
+                        title="Gallery"
+                        text="All images of my experiences"
+                        url=""
+                    />
+                </section>
+                <a href="mailto:ajmnotoza@gmail.com" className={styles.mobileNavContentLink}>
+                    <AiOutlineMail className={styles.mobileNavContentLinkIcon} />
+                    <span className={styles.mobileNavContentLinkText}>Let us talk</span>
+                </a>
             </motion.section>
         </section>
     )

@@ -200,7 +200,6 @@
 @media screen and (max-width: 480px) {
     .hero {
         height: 40vh;
-        display: none;
     }
     .heroContentTitleContext,
     .heroContentTitleColor {

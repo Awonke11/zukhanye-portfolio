@@ -36,11 +36,34 @@
         height: 100%;
         width: 100%;
         background-color: var(--white);
-        padding: 1.5rem;
+        padding: 3rem 1.5rem;
         z-index: 10;
     }
     .mobileNavContentIcon {
         font-size: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
+    }
+    .mobileNavContentLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+    .mobileNavContentLink {
+        text-decoration: none;
+        background-color: var(--black);
+        color: var(--white);
+        padding: 1rem .8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: var(--sm-radius);
+    }
+    .mobileNavContentLinkIcon {
+        font-size: 1.4rem;
+    }
+    .mobileNavContentLinkText {
+        font-weight: var(--bold);
+        font-size: 1.2rem;
     }
 }
