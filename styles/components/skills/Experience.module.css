@@ -1,0 +1,53 @@
+.experience {
+    padding: .8rem;
+    border: 1px solid var(--black);
+    border-radius: var(--md-radius);
+}
+
+.experienceTitle {
+    font-size: 1.4rem;
+    margin-bottom: .1rem;
+}
+
+.experienceText {
+    font-size: .9rem;
+    margin-bottom: .9rem;
+}
+
+.experienceFileTitle {
+    font-size: 1.2rem;
+    margin-bottom: .3rem;
+}
+
+.experienceFiles {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.file {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.fileIcon {
+    font-size: 1.1rem;
+    color: red;
+}
+
+.fileText {
+    font-size: .95rem;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: var(--bold);
+}
+
+@media screen and (max-width: 480px) {
+    .experienceTitle {
+        font-size: 1.2rem;
+    }
+    .experienceFileTitle {
+        font-size: 1rem;
+    }
+}

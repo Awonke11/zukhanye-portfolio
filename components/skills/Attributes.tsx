@@ -1,3 +1,4 @@
+import React from "react";
 import ShowList from "./ShowList";
 import styles from "@/styles/components/skills/Attributes.module.css";
 
