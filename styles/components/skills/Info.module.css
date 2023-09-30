@@ -12,3 +12,9 @@
 .infoText {
     font-size: 1rem;
 }
+
+@media screen and (max-width: 480px) {
+    .infoTitle {
+        font-size: 1.1rem;
+    }
+}
