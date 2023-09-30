@@ -1,0 +1,44 @@
+.tableContent {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: sticky;
+    top: 1rem;
+    background-color: var(--white);
+}
+
+.tableContentTitle {
+    font-family: var(--bold-family);
+    font-size: 1.6rem;
+}
+
+.tableContentList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.tableContentLink {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    text-decoration: none;
+}
+
+.tableContentLinkIcon {
+    font-size: 1.6rem;
+    color: var(--primary);
+}
+
+.tableContentLinkText {
+    color: var(--black);
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .tableContent {
+        display: none;
+    }
+}

@@ -1,0 +1,14 @@
+.sourceLink {
+    display: flex;
+    gap: .3rem;
+}
+
+.sourceLinkText {
+    font-weight: var(--bold);
+}
+
+.sourceLinklink {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: var(--bold);
+}
